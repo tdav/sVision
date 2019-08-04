@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{195ACC33-111C-4AC4-A624-1EA4644D6162}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Apteka.Others</RootNamespace>
+    <AssemblyName>Apteka.Others</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDolgList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDolgList.Designer.cs">
+      <DependentUpon>FrmDolgList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDrugStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDrugStore.Designer.cs">
+      <DependentUpon>FrmDrugStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewCustomer.Designer.cs">
+      <DependentUpon>FrmNewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductList.Designer.cs">
+      <DependentUpon>FrmProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelDistributor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelDistributor.Designer.cs">
+      <DependentUpon>FrmSelDistributor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewManufacturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewManufacturer.Designer.cs">
+      <DependentUpon>FrmNewManufacturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTmp.Designer.cs">
+      <DependentUpon>FrmTmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewDrug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewDrug.Designer.cs">
+      <DependentUpon>FrmNewDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewDistributor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewDistributor.Designer.cs">
+      <DependentUpon>FrmNewDistributor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewSp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewSp.Designer.cs">
+      <DependentUpon>FrmNewSp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSpList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSpList.Designer.cs">
+      <DependentUpon>FrmSpList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPing.Designer.cs">
+      <DependentUpon>FrmPing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetup.Designer.cs">
+      <DependentUpon>FrmSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDolgList.resx">
+      <DependentUpon>FrmDolgList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDrugStore.resx">
+      <DependentUpon>FrmDrugStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewCustomer.resx">
+      <DependentUpon>FrmNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductList.resx">
+      <DependentUpon>FrmProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelDistributor.resx">
+      <DependentUpon>FrmSelDistributor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewManufacturer.resx">
+      <DependentUpon>FrmNewManufacturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTmp.resx">
+      <DependentUpon>FrmTmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewDrug.resx">
+      <DependentUpon>FrmNewDrug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewDistributor.resx">
+      <DependentUpon>FrmNewDistributor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewSp.resx">
+      <DependentUpon>FrmNewSp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpList.resx">
+      <DependentUpon>FrmSpList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPing.resx">
+      <DependentUpon>FrmPing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetup.resx">
+      <DependentUpon>FrmSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vision.GlobalVars\Vision.GlobalVars.csproj">
+      <Project>{04C33DC2-6AD9-4D2E-A532-88D46F8921EF}</Project>
+      <Name>Vision.GlobalVars</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vision.UtilsUI\Vision.UtilsUI.csproj">
+      <Project>{978f1125-e612-49bd-b64d-747f06cd8f5a}</Project>
+      <Name>Vision.UtilsUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vision.Utils\Vision.Utils.csproj">
+      <Project>{ccc72c2f-aaa4-4d9b-8479-4b458d54d9e2}</Project>
+      <Name>Vision.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Apteka.Models.Entity.spDrugStore.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
